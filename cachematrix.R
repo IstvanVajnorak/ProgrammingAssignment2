@@ -4,6 +4,12 @@
 ## Creates a matrix based on the makeVector implementation that 
 ## wraps a caching functionality around any ordinary matrix instace
 ## created in R.
+##
+## How to test: 
+##  There is an accompanying file called cachetest.R in which I have provided
+##  proof that the caching works as expected. That can be used as the starting point
+##  to see how the "API" should be used.
+##
 makeCacheMatrix <- function(x = matrix()) {
 
   ## the holder for the inverse, which gets flushed when the actual matrix is reset
